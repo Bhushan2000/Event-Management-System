@@ -89,6 +89,10 @@ git clone https://github.com/Bhushan2000/Event-Management-System.git
 
 # Open in Android Studio (KMP-supported version)
 
+# Important note: Add your API key in gradle.properties (Project root)
+
+# like., MAPS_API_KEY=YOUR_API_KEY in your 
+
 # Sync Gradle & install dependencies
 
 # Run the app on a device/emulator
