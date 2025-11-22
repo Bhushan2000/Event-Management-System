@@ -1,95 +1,92 @@
-This is a Kotlin Multiplatform project targeting Android, iOS, Web, Desktop (JVM), Server.
+# <div align="center"> <img width="540" height="540" alt="Image" src="https://github.com/user-attachments/assets/7ecb1569-9b8f-41d9-b4ca-ff466be97fb6" /> </div>
+# Event Management System (KMP App)
 
-* [/composeApp](./composeApp/src) is for code that will be shared across your Compose Multiplatform applications.
-  It contains several subfolders:
-  - [commonMain](./composeApp/src/commonMain/kotlin) is for code that’s common for all targets.
-  - Other folders are for Kotlin code that will be compiled for only the platform indicated in the folder name.
-    For example, if you want to use Apple’s CoreCrypto for the iOS part of your Kotlin app,
-    the [iosMain](./composeApp/src/iosMain/kotlin) folder would be the right place for such calls.
-    Similarly, if you want to edit the Desktop (JVM) specific part, the [jvmMain](./composeApp/src/jvmMain/kotlin)
-    folder is the appropriate location.
-
-* [/iosApp](./iosApp/iosApp) contains iOS applications. Even if you’re sharing your UI with Compose Multiplatform,
-  you need this entry point for your iOS app. This is also where you should add SwiftUI code for your project.
-
-* [/server](./server/src/main/kotlin) is for the Ktor server application.
-
-* [/shared](./shared/src) is for the code that will be shared between all targets in the project.
-  The most important subfolder is [commonMain](./shared/src/commonMain/kotlin). If preferred, you
-  can add code to the platform-specific folders here too.
-
-### Build and Run Android Application
-
-To build and run the development version of the Android app, use the run configuration from the run widget
-in your IDE’s toolbar or build it directly from the terminal:
-- on macOS/Linux
-  ```shell
-  ./gradlew :composeApp:assembleDebug
-  ```
-- on Windows
-  ```shell
-  .\gradlew.bat :composeApp:assembleDebug
-  ```
-
-### Build and Run Desktop (JVM) Application
-
-To build and run the development version of the desktop app, use the run configuration from the run widget
-in your IDE’s toolbar or run it directly from the terminal:
-- on macOS/Linux
-  ```shell
-  ./gradlew :composeApp:run
-  ```
-- on Windows
-  ```shell
-  .\gradlew.bat :composeApp:run
-  ```
-
-### Build and Run Server
-
-To build and run the development version of the server, use the run configuration from the run widget
-in your IDE’s toolbar or run it directly from the terminal:
-- on macOS/Linux
-  ```shell
-  ./gradlew :server:run
-  ```
-- on Windows
-  ```shell
-  .\gradlew.bat :server:run
-  ```
-
-### Build and Run Web Application
-
-To build and run the development version of the web app, use the run configuration from the run widget
-in your IDE's toolbar or run it directly from the terminal:
-- for the Wasm target (faster, modern browsers):
-  - on macOS/Linux
-    ```shell
-    ./gradlew :composeApp:wasmJsBrowserDevelopmentRun
-    ```
-  - on Windows
-    ```shell
-    .\gradlew.bat :composeApp:wasmJsBrowserDevelopmentRun
-    ```
-- for the JS target (slower, supports older browsers):
-  - on macOS/Linux
-    ```shell
-    ./gradlew :composeApp:jsBrowserDevelopmentRun
-    ```
-  - on Windows
-    ```shell
-    .\gradlew.bat :composeApp:jsBrowserDevelopmentRun
-    ```
-
-### Build and Run iOS Application
-
-To build and run the development version of the iOS app, use the run configuration from the run widget
-in your IDE’s toolbar or open the [/iosApp](./iosApp) directory in Xcode and run it from there.
+A modern **Event Management** mobile application built using **Kotlin Multiplatform**, Jetpack Compose, and Google Maps.  
+This app allows users to discover events, view details, and explore event locations on an interactive map.
 
 ---
 
-Learn more about [Kotlin Multiplatform](https://www.jetbrains.com/help/kotlin-multiplatform-dev/get-started.html),
-[Compose Multiplatform](https://github.com/JetBrains/compose-multiplatform/#compose-multiplatform),
-[Kotlin/Wasm](https://kotl.in/wasm/)…
+## 🚀 Features
 
-We would appreciate your feedback on Compose/Web and Kotlin/Wasm in the public Slack channel [#compose-web](https://slack-chats.kotlinlang.org/c/compose-web).
-If you face any issues, please report them on [YouTrack](https://youtrack.jetbrains.com/newIssue?project=CMP).
+### 🏠 1️⃣ Discover Screen
+- Displays a list of events with basic details  
+- Search through events  
+- Swipe-to-refresh support  
+- Pagination for infinite scrolling  
+- Sort events by category  
+- Navigation to Event Details & Event Map screen  
+- Tap on any event → opens Event Details screen
+
+---
+
+### 📄 2️⃣ Event Details Screen
+- Shows complete event information  
+- Event image carousel  
+- Displays pricing & category details  
+
+---
+
+### 🗺️ 3️⃣ Event Map Screen
+- Shows event locations on Google Maps  
+- Horizontal swipe to change events  
+- Only one event marker shown at a time  
+- Smooth camera animation on swipe  
+
+---
+
+## 🛠️ Tech Stack & Dependencies
+
+### 🔹 Android / Compose
+``navigation-compose``  
+``material-icons-core``  
+``material-icons-extended``  
+``maps-compose``  
+``play-services-maps``  
+``coil-compose``  
+``coil-network-okhttp``  
+``accompanist-pager``  
+``accompanist-pager-indicators``  
+``accompanist-swiperefresh``  
+
+### 🔹 Networking (Ktor)
+``ktor-client-core``  
+``ktor-client-android``  
+``ktor-client-okhttp``  
+``ktor-client-content-negotiation``  
+``ktor-serialization-kotlinx-json``  
+``ktor-client-logging``  
+
+### 🔹 Dependency Injection (Koin)
+``koin-compose``  
+``koin-compose-viewmodel``  
+``koin-compose-viewmodel-navigation``  
+
+### 🔹 Kotlin Multiplatform (KMP)
+Used for shared business logic across modules
+
+---
+
+## 📸 Screenshots
+
+| Discover Screen | Event Details | Event Map |
+|----------------|----------------|---------------|
+| ![Discover](assets/screenshot_discover.png) | ![Details](assets/screenshot_details.png) | ![Map](assets/screenshot_map.png) |
+
+## 🎥 Demo Video
+
+📌 *Short preview of the app in action*  
+Add your demo video here 👇
+
+🔗 e.g. YouTube / Drive Link  
+
+## ⚙️ Setup & Installation
+
+```sh
+# Clone repository
+git clone https://github.com/Bhushan2000/Event-Management-System.git
+
+# Open in Android Studio (KMP-supported version)
+
+# Sync Gradle & install dependencies
+
+# Run the app on a device/emulator
