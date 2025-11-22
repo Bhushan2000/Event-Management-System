@@ -1,4 +1,4 @@
-# <div align="center"> <img width="540" height="540" alt="Image" src="https://github.com/user-attachments/assets/7ecb1569-9b8f-41d9-b4ca-ff466be97fb6" /> </div>
+# <div align="center"> <img width="540" height="540" alt="Image" src="https://github.com/user-attachments/assets/7ecb1569-9b8f-41d9-b4ca-ff466be97fb6" /></div>
 # Event Management System (KMP App)
 
 A modern **Event Management** mobile application built using **Kotlin Multiplatform**, Jetpack Compose, and Google Maps.  
@@ -34,6 +34,21 @@ This app allows users to discover events, view details, and explore event locati
 
 ---
 
+## 📸 Screenshots
+
+| Launcher Screen | Discover Screen | Search Screen | Event Details | Event Map |
+|----------------|----------------|---------------|----------------|---------------|
+| ![Launcher](assets/screenshot_launcher.png) | ![Discover](assets/screenshot_discover.png) | ![Search](assets/screenshot_search.png) | ![Details](assets/screenshot_details.png) | ![Map](assets/screenshot_map.png) |
+
+## 🎥 Demo Video
+
+📌 *Short preview of the app in action*  
+Add your demo video here 👇
+
+🔗 e.g. YouTube / Drive Link  
+
+---
+
 ## 🛠️ Tech Stack & Dependencies
 
 ### 🔹 Android / Compose
@@ -65,19 +80,6 @@ This app allows users to discover events, view details, and explore event locati
 Used for shared business logic across modules
 
 ---
-
-## 📸 Screenshots
-
-| Launcher Screen | Discover Screen | Search Screen | Event Details | Event Map |
-|----------------|----------------|---------------|----------------|---------------|
-| ![Launcher](assets/screenshot_launcher.png) | ![Discover](assets/screenshot_discover.png) | ![Search](assets/screenshot_search.png) | ![Details](assets/screenshot_details.png) | ![Map](assets/screenshot_map.png) |
-
-## 🎥 Demo Video
-
-📌 *Short preview of the app in action*  
-Add your demo video here 👇
-
-🔗 e.g. YouTube / Drive Link  
 
 ## ⚙️ Setup & Installation
 
