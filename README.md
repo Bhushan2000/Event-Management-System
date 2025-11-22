@@ -69,7 +69,7 @@ Used for shared business logic across modules
 ## 📸 Screenshots
 
 | Launcher Screen | Discover Screen | Search Screen | Event Details | Event Map |
-|----------------|----------------|---------------|
+|----------------|----------------|---------------|----------------|---------------|
 | ![Launcher](assets/screenshot_launcher.png) | ![Discover](assets/screenshot_discover.png) | ![Search](assets/screenshot_search.png) | ![Details](assets/screenshot_details.png) | ![Map](assets/screenshot_map.png) |
 
 ## 🎥 Demo Video
