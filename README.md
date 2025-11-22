@@ -42,10 +42,10 @@ This app allows users to discover events, view details, and explore event locati
 
 ## 🎥 Demo Video
 
-📌 *Short preview of the app in action*  
-Add your demo video here 👇
+📌 *Short preview of the app in action*
 
-🔗 e.g. YouTube / Drive Link  
+https://github.com/user-attachments/assets/8b9e57e2-a389-4018-8e85-59250415336b
+
 
 ---
 
